@@ -1,0 +1,110 @@
+/*reset*/
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* picsell profil */
+body{
+  background: #000000;
+  color: gold;
+  cursor: pointer;
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+/* form */
+.signup_form{
+  padding: 15px;
+  margin-top: 30px;
+  margin-left: 20%;
+}
+/*profile_picture*/
+.profile_picture{
+  margin-left: 25%;
+}
+.profile_picture img{
+  width: 26%;
+  height: 26%;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 100%;
+}
+/*input*/
+.signup_form input{
+  height: 40px;
+  width: 70%;
+  border-style: solid;
+  border-width: thin;
+  background: #000000;
+  border-color: gold;
+  color: gold;
+  border-right-style: none;
+  text-align: center;
+  border-left-style: none;
+  border-top-style: none;
+}
+.signup_form label, input{
+  display: block;
+  padding: 10px;
+}
+h3{
+  margin-left: 65%;
+  padding: 1%;
+}
+span{
+  padding: 3px;
+}
+.fa-chevron-right{
+  color: gold;
+  margin-left: 65%;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  margin-top: 23px;
+  background: #FF3920;
+  width: 5%;
+}
+button{
+  color: gold;
+  padding: 1.6px;
+  margin-left: 64%;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 23px;
+  background: #FF3920;
+  border: 1px solid #000000;
+}
+/* user_care */
+.profile_care{
+  padding: 10px;
+  margin-left: 18%;
+}
+.profile_care ul {
+  list-style-type: none;
+}
+.profile_care li{
+  float: left;
+  margin-top: 7%;
+  margin-left: 20%;
+}
+li .fa{
+  font-size: 1.4em;
+}
+li .fa-question-circle{
+  color: blue;
+}
+/*Login*/
+.Login{
+  background: #FF3920;
+  width: 100%;
+  padding: 15px;
+}
+.Login .Login_Link{
+  margin-left: 95%;
+  color: gold;
+  text-decoration: none;
+}

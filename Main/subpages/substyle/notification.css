@@ -1,0 +1,136 @@
+/*reset*/
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* image position */
+body{
+background: #000000;
+cursor: pointer;
+font-family: Helvetica, Helvetica;
+font-weight: lighter;
+font-size: 1em;
+}
+/* page  upper-header */
+.nav_header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: fixed;
+  background: #FF3920;
+  width: 100%;
+  top: 0;
+  color: #000000;
+  z-index: 1;
+}
+.nav_header .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid;
+}
+.nav_header .logo input[type="search"]{
+	border-width: thin;
+	border-bottom: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+	color: #FFB302;
+  height: 25px;
+  width: 90%;
+  background: #FF3920;
+}
+/*search button */
+.nav_header .logo .search_btn{
+  border-width: thin;
+	border-style: solid;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  border-radius: 100%;
+}
+/*search button and icons */
+.nav_header .logo .search_btn .fa{
+  color: #FFB302;
+  padding: 1%;
+}
+/* subTittle on Header */
+.nav_header .Menu .nav_icons{
+  height: 100%;
+  list-style: none;
+  padding: 17px;
+  margin-left: -13.2%;
+}
+.nav_header .Menu .nav_icons .sym_icons{
+  float: left;
+  padding-left: 12%;
+}
+.nav_header .Menu .nav_icons .sym_icons .fa{
+  color: #FFB302;
+  font-size: 1.4em;
+}
+.nav_header .Menu .nav_icons .sym_icons .link_icon{
+  text-decoration: none;
+  color: #FFB302;
+  font-family: Helvetica, Helvetica;
+  font-weight: lighter;
+  font-size: 1em;
+}
+/* notification alerts*/
+.notification_alerts{
+  color: #FFB302;
+  margin-top: 130px;
+  z-index: 2;
+  opacity: 0.7;
+}
+.Message_Creater{
+  position: absolute;
+  margin-left: 88%;
+
+}
+.Message_Creater .fa-pencil-alt{
+  color: gold;
+  position: fixed;
+  padding: 7.5px;
+  background: #000000;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FFB302;
+  border-radius: 100%;
+}
+.notification_alerts .client_message{
+  border-bottom: 3px solid  #373B49;
+  padding: 15px;
+}
+.client_message .Time_arrived{
+position: absolute;
+margin-left: 90%;
+padding:15px;
+font-family: Helvetica, Helvetica;
+font-size: 1em;
+font-weight: lighter;
+margin-top: -30px;
+}
+.client_profile{
+  background: #000000;
+  border: 3px solid black;
+  position: absolute;
+  width: 69px;
+  height: 40px;
+}
+.Message_header{
+  font-family: Helvetica, Helvetica;
+  font-weight: lighter;
+  font-size: 1em;
+}
+.Message_subtitle{
+  font-family: Helvetica, Helvetica;
+  font-size: 1em;
+  font-weight: lighter;
+}
+.Message_header, .Message_subtitle{
+  margin-left: 6%;
+}

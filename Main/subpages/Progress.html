@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>HomeLandings</title>
+   	<link rel="stylesheet" type="text/css" href="substyle/progress.css" media="all" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="substyle/css/all.css">
+</head>
+<body>
+  <!-- Page header -->
+  <header class="nav_header">
+    <h1 class="logo">
+      <img src = "image/company.jpg" placeholder="thumbail" />
+      <input type="search" placeholder="search" />
+      <button  type="submit" class="search_btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </h1>
+    <nav class="Menu">
+      <ul class="nav_icons">
+        <li class="sym_icons">
+        <a href="../index.php" class="link_icon">
+          <i class="fa fa-newspaper"></i>
+        </a>
+      </li>
+        <li class="sym_icons">
+          <a href="Shops.html" class="link_icon">
+            <i class="fa fa-warehouse"></i>
+          </a>
+      </li>
+        <li class="sym_icons">
+          <a href="Progress.html" class="link_icon">
+            <i class="fa fa-briefcase" class="link_icon"></i>
+          </a>
+        </li>
+        <li class="sym_icons">
+          <a href="notification.php" class="link_icon">
+            <i class="fa fa-bell"></i>
+          </a>
+        </li>
+        <li class="sym_icons">
+          <a href="activeUsers.php" class="link_icon">
+            <i class="fa fa-user"></i>
+          </a>
+        </li>
+        <li class="sym_icons">
+          <a href="userConfig.php" class="link_icon">
+            <i class="fa fa-cogs"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    </nav>
+  </header>
+    <!--progress-->
+    <main class="Container_chart">
+      <section class="control_pannel">
+        <ul class="pannel_Menu">
+          <li class="Time_row">
+            <span class="Time">Days</span>
+            <i class="fa fa-angle-right"></i>
+              <ul class="Days_num">
+                <li>Day 1: Sunday</li>
+                <li>Day 2: Monday</li>
+                <li>Day 3: Tuesday</li>
+                <li>Day 4: Wenesday</li>
+                <li>Day 5: Thurday</li>
+                <li>Day 6: Friday</li>
+                <li>Day 7: Sturday</li>
+              </ul>
+          </li>
+          <li class="Time_row">
+            <span class="Time">week</span>
+            <i class="fa fa-angle-right"></i>
+            <ul class="Days_num">
+                <li>Week 1: </li>
+                <li>Week 2: </li>
+                <li>Week 3: </li>
+              </ul>
+          </li>
+          <li class="Time_row">
+            <span class="Time">Months</span>
+            <i class="fa fa-angle-right"></i>
+             <ul class="Days_num">
+                <li>Month 1: Janury</li>
+                <li>Month 2: Feb</li>
+                <li>Month 3: March</li>
+                <li>Month 4: April</li>
+                <li>Month 5: May</li>
+                <li>Month 6: June</li>
+                <li>Month 7: July</li>
+                <li>Month 8: August</li>
+                <li>Month 9: september</li>
+                <li>Month 10: October</li>
+                <li>Month 11: Novermber</li>
+                <li>Month 12: December</li>
+              </ul>
+          </li  class="Time_row">
+          <li class="Time_row">
+            <span class="Time">years</span>
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li class="Time_row">
+            <span class="Time">Profits</span>
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li class="Time_row">
+            <span class="Time">Loses</span>
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li class="Time_row">
+            <span class="Time">Products</span>
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li class="Time_row">
+            <span class="Time">Customers</span>
+            <i class="fa fa-angle-right"></i>
+          </li>
+        </ul>
+      </section>
+      <section class="Analysis_percent">
+        70% 
+      </section>
+      <canvas id="Trend_chart">
+
+      </canvas>
+
+      <section class="Total_amount">
+        <article class="amount">
+          <h1>Total Amount</h1>
+          <p>K 1,000,000,000,000,000,000
+        </article>
+      </section>
+    </main>
+  <footer  class="footer">
+  </footer>
+   <!-- script -->
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/progress.js"></script>
+</body>
+</html>

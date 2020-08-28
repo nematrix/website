@@ -1,0 +1,664 @@
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+html, body{
+  height: 100%;
+}
+/* image position */
+body{
+  background: #161818;
+  cursor: pointer;
+  font-family: Helvetica, Helvetica;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+/* page  upper-header */
+.nav_header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: fixed;
+  background: #FF3920;
+  width: 100%;
+  height: 14%;
+  top: 0;
+  color: #000000;
+  z-index: 1;
+}
+.nav_header .logo{
+  margin-left: 2%;
+}
+.logo input[type="search"]{
+	border-width: thin;
+	border-bottom: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  text-align: center;
+  font-size: 1.3rem;
+	color: #FFB302;
+  width: 78%;
+  background: #FF3920;
+}
+/*search button */
+.logo .search_btn{
+  position: relative;
+  border-width: thin;
+	border-style: solid;
+  width: 30px;
+  height: 30px;
+  margin-left: 2%;
+  margin-top: 3.4%;
+  background: #000000;
+  border-radius: 100%;
+}
+/*search button and icons */
+.search_btn .fa{
+  color: #FFB302;
+}
+/* subTittle on Header */
+.nav_header .Menu{
+  position: fixed;
+  margin-top: 2.6%;
+  margin-left: 86%;
+}
+.nav_header .Menu .nav_icons{
+  height: 100%;
+  list-style: none;
+  padding: 17px;
+  margin-left: -13.2%;
+}
+.nav_icons .sym_icons{
+  float: left;
+  padding-left: 0.6%;
+}
+.sym_icons .fa{
+  color: #FFB302;
+  font-size: 1.4em;
+}
+.sym_icons .fa-user-plus{
+   padding-left: 70%;
+}
+.sym_icons .link_icon{
+  text-decoration: none;
+  color: #FFB302;
+  font-family: Helvetica, Helvetica;
+  font-weight: lighter;
+  font-size: 1em;
+}
+/*page upload */
+/* page container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "shop_details shop_details"
+  "img img";
+   z-index: 2;
+}
+.container .products{
+  margin-top: 114px;
+  padding: 7px;
+}
+/* Remove shop */
+.shop_remove .fa-times{
+  color: rgb(254, 0, 0);
+  margin-left: 98%;
+  font-size: 1.5rem;
+  padding: 3px;
+  opacity: 0.7;
+}
+.products .imageProducts{
+  position: relative;
+  padding: 0.8%;
+  box-shadow:  1px 1px 1px 1px #ccc;
+  background: #000000;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+/* Remove next */
+.Next, .prev{
+  display: none;
+}
+/* shop information*/
+.imageProducts .shop_details{
+  margin-left: 55px;
+  font-family: Helvetica, Helvetica;
+  font-size: 13px;
+  font-weight: bold;
+  grid-area: shop_details;
+  color: #FFB302;
+  padding: 20px;
+}
+/* shop log */
+.imageProducts .shop_details img{
+  position: absolute;
+  width: 43px;
+  height: 37px;
+  padding: 1px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  background: #FF3920;
+  margin-left: -50px;
+}
+.fa-shopping-cart{
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 215px;
+  color: rgb(255, 168, 0);
+  font-size: 20px;
+  border-style: solid;
+  background: #000000;
+  cursor: pointer;
+  border-color: #696969;
+  width: 40px;
+  height: 40px;
+  border-width: thick;
+  border-radius: 100%;
+  padding: 4px;
+}
+.payment{
+  margin-top: 7%;
+  margin-left: 1%;
+  width: 17.4%;
+  height: 30%;
+  background: #ffffff;
+  position: absolute;
+  color: #000000;
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+.payment .fa-times{
+  color: rgb(255, 0, 0);
+  margin-left: 90%;
+}
+.keep_product{
+  border-bottom: 2px solid #000000;
+  padding: 6px;
+}
+.payment_product{
+  padding: 6px;
+}
+input[type='radio']{
+  margin-left: 60%;
+  align-content: center;
+}
+.payment_product input[type='radio']{
+  margin-left: 62.97%;
+}
+.fa-play-circle{
+  position: absolute;
+  font-size: 1.5rem;
+  width: 5%;
+  margin-top: 233px;
+  background: #000000;
+  border-radius: 8px;
+  transform: rotate(179deg);
+  margin-left: 13%;
+  opacity: 1.0;
+  color: #062dfb;
+}
+.fa-book-open{
+  position: absolute;
+  font-size: 1.5rem;
+  width: 5%;
+  margin-top: 232px;
+  background: #000000;
+  padding: 2px;
+  border-radius: 8px;
+  margin-left: 13%;
+  opacity: 1.0;
+  color: #062dfb;
+}
+.fa-video{
+  position: absolute;
+  font-size: 1.5em;
+  width: 5%;
+  margin-top: 232px;
+  background: #000000;
+  padding: 2px;
+  border-radius: 8px;
+  transform: rotate(180deg);
+  margin-left: 13%;
+  opacity: 1.0;
+  color: #062dfb;
+}
+.product_status{
+  position: absolute;
+  font-size: 1.4rem;
+  margin-top: 232px;
+  background: #000000;
+  padding: 2px;
+  width: 5%;
+  border-radius: 8px;
+  margin-left: 13%;
+  opacity: 1.0;
+}
+.product_status .num_exp{
+  color: rgb(236, 233, 242);
+  font-size: 1rem;
+}
+.fa-heart{
+  color: rgb(255, 0, 0);
+}
+.shop_details .fa-lock, .fa-unlock-alt{
+  opacity: 0.7;
+  color:  #FFB302;
+  font-size: 15px;
+  padding: 3px;
+}
+/* End of shop details */
+/* product information */
+.product_price .item_price{
+  font-family: Helvetica, Helvetica;
+  font-weight: lighter;
+  position: absolute;
+  margin-top: 87px;
+  margin-left: 6%;
+  color: #FFB302;
+  background: #000000;
+  border: 5px dotted #FFB302;
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  opacity: 0.9;
+}
+/* price tag */
+.item_price .price_tag{
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 17%;
+}
+.price_tag .currency{
+  color: #FFB302;
+  font-weight: lighter;
+  font-size: 2.4rem;
+}
+.item_price .fa-tags{
+  position: absolute;
+  opacity: 1.0;
+  margin-left: 80%;
+  margin-top: 7px;
+  font-size: 25px;
+  color: #000000;
+}
+/* Number of items */
+.product_price .remaining_products{
+  position: absolute;
+  margin-top: 22px;
+  margin-left: 220px;
+  color: #000000;
+  background: gold;
+  padding: 3px;
+  border: solid;
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+}
+/*info icon */
+.product_details{
+  position: absolute;
+  color: rgb(0, 88, 238);
+  margin-top: 0.6%;
+  margin-left: 0.4%;
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+.product_details .fa-info-circle{
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  background: #000000;
+  padding: 2px;
+}
+/* product info table list */
+.container .product_info table{
+  position: absolute;
+  top: 170px;
+  background: #000000;
+  height: 241px;
+  color: #ddd;
+  border-collapse: collapse;
+  width: 18%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.container .product_info .close{
+  background: #000000;
+  color: red;
+  border: none;
+  top: 105px;
+  width: 0;
+  height: 0;
+  left: 17%;
+  font-size: 26px;
+  transform: rotate(45deg);
+  padding: 7px;
+}
+/* slide_product */
+.container .products ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "img img img img img ";
+  background: #000000;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+/* shops paints */
+.products ul{
+  border-radius: 9px;
+}
+.products .product_image{
+   border: 4px solid blue;
+}
+.products .sky_way{
+  border: 4px solid red;
+}
+.products .one{
+  border: 4px solid #7302EB;
+}
+.products .two{
+  border: 4px solid #00FF00;
+}
+.products .Three{
+  border: 4px solid #606DC5;
+}
+.products .four{
+  border: 4px solid #660000;
+}
+.products .five{
+  border: 4px solid #FF00DE;
+}
+.products .six{
+  border: 4px solid #00FFFF;
+}
+.products .seven{
+  border: 4px solid #7E00FF;
+}
+.products .eight{
+  border: 4px solid #660000;
+}
+/*shop slides images */
+.container .products li{
+  float: left;
+  background: #000000;
+}
+.container .products li img{
+  width: 19Vw;
+  height: 270px;
+  display: block;
+  grid-area: img;
+  padding: 3px;
+  border-radius: 8px;
+}
+/* Video */
+.video_player{
+  position: absolute;
+  color: #000;
+  background: rgb(101, 101, 86);
+  width: 19Vw;
+  height: 270px;
+  border-radius: 8px;
+}
+.video_player .fa-times{
+  color: red;
+  margin-left: 92%;
+  padding: 3px;
+}
+.video_player .Video_title,.Video_artist{
+  padding: 5px;
+}
+.video_player .Video_controls{
+  position: absolute;
+  margin-top: 48%;
+  width: 19Vw;
+  height: 30px;
+  background: blue;
+}
+.Video_controls .blue_bar{
+  background: #fff;
+  height: 3px;
+  left: 0;
+  width: 100%;
+}
+.blue_bar .blue_juice{
+  height: 3px;
+  background-color: #000000;
+}
+.video_player  video{
+  width: 19Vw;
+  height: auto;
+  object-fit: contain;
+}
+.buttons button{
+  background: none;
+  border: none;
+  outline: 0;
+  padding: 2px;
+  margin-left: 0%;
+  color: #000000;
+  position: absolute;
+}
+.buttons button::before{
+    color:#000;
+    content: '\f04b'; /* replace / with \ */
+    font-family: "Font Awesome 5 Free"; /* here is the correct font-family */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-top: 2%;
+    padding: 3px;
+}
+.buttons button.play::before{
+  content: '\f04b';
+}
+.buttons button.pause::before{
+  content: '\f04c';
+}
+/*  Music */
+.Music_player{
+  position: absolute;
+  width: 19%;
+  height: 270px;
+  border-radius: 8px;
+  background: rgb(0, 132, 227);
+  background: linear-gradient(45deg, rgb(162, 50, 104), rgb(104, 208, 203), rgb(121, 26, 98), rgb(178, 210, 77));
+}
+.Music_player .Music_close{
+   position: relative;
+   font-family: Helvetica, Helvetica;
+   font-size: 1.25rem;
+   color: rgb(250, 0, 0);
+}
+.Music_close .fa-times{
+  position: relative;
+  margin-left: 90%;
+  margin-top: 5%;
+}
+.Music_player #Music_title{
+  font-family: Helvetica, Helvetica;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  margin-top: 14%;
+  margin-left: 15%;
+  position: relative;
+  width: fit-content;
+  align-items: center;
+}
+#Music_title h1{
+  font-size: 1.2rem;
+}
+#Music_title p{
+  font-size: 1rem;
+}
+.Music_player .Music_controls{
+  margin-top: 3%;
+  margin-left: 7%;
+}
+.Music_controls button{
+  background: rgb(0, 132, 227);
+  background: linear-gradient(45deg, rgb(162, 50, 104), rgb(104, 208, 203), rgb(121, 26, 98), rgb(178, 210, 77));
+  border: 2px solid #000000;
+  padding: 7px;
+  margin-left: 10%;
+  border-radius: 100%; 
+}
+.Music_controls #music_Btn::before{
+    color:#000;
+    content: '\f04b'; /* replace / with \ */
+    font-family: "Font Awesome 5 Free"; /* here is the correct font-family */
+    font-style: normal;
+    font-weight: 900;
+}
+#music_Btn.Music_play::before{
+  content: '\f04b';
+}
+#music_Btn.Music_pause::before{
+  content: '\f04c';
+}
+.Music_controls .fa{
+  color: #000000;
+}
+/* Music list */
+.Music_list .fa-bars{
+  color: #000000;
+  font-size: 1.3rem;
+  margin-top: 10%;
+  margin-left: 70%;
+}
+/* music seekbar */
+.Music_seekbar{
+  display: flex;
+  background-color: #000000;
+  border-radius: 5px;
+  margin-left: 2%;
+  width: 90%;
+  height: 2.5px;
+}
+#fill{
+  height: 2.5px;
+  width: 2%;
+  background-color: #f0e5e1;
+  border: 100%;
+}
+#handle{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: -1%;
+  background: #f0e5e1;
+  transform: scale(2);
+}
+/*pdfs viewer*/
+.pdf_viewer{
+  background: #fff;
+  color: #000;
+  padding: 3px;
+  border-radius: 5px;
+  width: 18.5Vw;
+  height: 262px;
+  margin-top: 0.3%;
+  margin-left: 0.3%;
+  position: absolute;
+}
+.pdf_viewer .fa-times{
+  color: red;
+  margin-left:  92%;
+  font-size: 1.2rem;
+  padding: 3px;
+  background: #000000;
+}
+.pdf_viewer .controls{
+  font-size: 1.5rem;
+}
+.controls .fa{
+  position: absolute;
+  padding-left: 3px;
+}
+.controls .fa-angle-right{
+  color: blue;
+  margin-left: 90%;
+  background: #000;
+}
+.controls .fa-angle-left{
+  float: left;
+  color:  green;
+  background: #000;
+}
+/* status layout */
+.status{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-start: span 2;
+  display: none;
+}
+.container .status{
+  background: #000000;
+  border-width: thin;
+  border-bottom: solid;
+  border-left: none;
+  border-right: none;
+  border-top: solid;
+}
+.container .status i{
+  color: #FFD700;
+  padding-top: 2%;
+  padding-left: 11%;
+
+}
+.container p i:first-child:hover{
+  color: silver;
+}
+/*side button */
+.container .sidebar-btn{
+  position: absolute;
+  margin-left: 127%;
+  top: 2%;
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+  background:  #FFD700;
+}
+
+ /* Next_Stores*/
+  .Next_Stores{
+    padding: 0.2%;
+  }
+  .Next_Stores .fa-angle-double-right{
+    color: #FFD700;
+    font-size: 1.3rem;
+    background: #000000;
+    padding: 0.3%;
+    border-radius: 100%;
+    margin-left: 93%
+  }
+/*Page footer */
+
+.footer{
+  font-family: Helvetica, Helvetica;
+  width: 98.5%;
+  font-size: 1.3rem;
+  margin-left: 1%;
+  color: #FFD700;
+  background: #000000;
+  padding: 50px;
+  border-radius: 8px;
+}
+.footer .footer_elements{
+  list-style-type: none;
+}
+.footer_elements li{
+  float: left;
+  margin-left: 17%;
+}

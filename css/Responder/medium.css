@@ -1,0 +1,196 @@
+/* 740 view*/
+@media only screen and (max-width: 740px)
+{
+    header .Menu ul li{
+      margin-left: 12% !important;
+    }
+    header .Menu ul li i{
+      color: #FFD700;
+      font-size: 20px !important;
+    }
+    .container .products{
+      margin-top: 114px;
+      margin-left: 0;
+      padding: 1px;
+    }
+    .container .products ul{
+      grid-template-columns: 1fr 1fr 1fr!important;
+      grid-template-areas: "img" !important;
+      }
+      .container .products li img{
+        width: 33.2Vw !important;
+        height: 270px;
+      }
+}
+/* 710 view */
+@media only screen and (max-width: 710px)
+{
+    header .Menu ul li{
+      margin-left: 12% !important;
+    }
+    header .Menu ul li i{
+      color: #FFD700;
+      font-size: 20px !important;
+    }
+    .container .products{
+      margin-top: 114px;
+      margin-left: 0;
+      padding: 1px;
+    }
+    .container .products ul{
+      grid-template-columns: 1fr 1fr 1fr!important;
+      grid-template-areas: "img" !important;
+      }
+      .container .products li img{
+        width: 33.4Vw !important;
+        height: 270px;
+      }
+}
+/* 690 view */
+@media only screen and (max-width: 690px)
+{
+    header .Menu ul li{
+      margin-left: 12% !important;
+    }
+    header .Menu ul li i{
+      color: #FFD700;
+      font-size: 20px !important;
+    }
+    .container .products{
+      margin-top: 114px;
+      margin-left: 0;
+      padding: 1px;
+    }
+    .container .products ul{
+      grid-template-columns: 1fr 1fr!important;
+      grid-template-areas: "img" !important;
+      }
+      .container .products li img{
+        width: 50Vw !important;
+        height: 270px;
+      }
+}
+/* 660 view */
+@media only screen and (max-width: 660px)
+{
+    header .Menu ul li{
+      margin-left: 12% !important;
+    }
+    header .Menu ul li i{
+      color: #FFD700;
+      font-size: 20px !important;
+    }
+    .container .products{
+      margin-top: 114px;
+      margin-left: 0;
+      padding: 1px;
+    }
+    .container .products ul{
+      grid-template-columns: 1fr 1fr!important;
+      grid-template-areas: "img" !important;
+      }
+      .container .products li img{
+        width: 50Vw !important;
+        height: 270px;
+      }
+}
+/* 630px view */
+@media only screen and (max-width: 630px)
+{
+    header .Menu ul li{
+      margin-left: 12% !important;
+    }
+    header .Menu ul li i{
+      color: #FFD700;
+      font-size: 20px !important;
+    }
+    .container .products{
+      margin-top: 114px;
+      margin-left: 0;
+      padding: 1px;
+    }
+    .container .products ul{
+      grid-template-columns: 1fr 1fr!important;
+      grid-template-areas: "img" !important;
+      }
+      .container .products li img{
+        width: 50Vw !important;
+        height: 270px;
+      }
+}
+/* 601 view */
+@media only screen and (max-width: 601px)
+{
+    header .Menu ul li{
+      margin-left: 12% !important;
+    }
+    header .Menu ul li i{
+      color: #FFD700;
+      font-size: 20px !important;
+    }
+    .container .products{
+      margin-top: 114px;
+      margin-left: 0;
+      padding: 1px;
+    }
+    .container .products ul{
+      grid-template-columns: 1fr 1fr!important;
+      grid-template-areas: "img" !important;
+      }
+      .container .products li img{
+        width: 50Vw !important;
+        height: 270px;
+      }
+}
+/* 512 view */
+@media only screen and (max-width: 512px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: header;
+    grid-template-rows: 1fr;
+    grid-template-areas: "i"
+  }
+  header .Menu ul li{
+    margin-left: 10% !important;
+  }
+  .container .products{
+    margin-top: 114px;
+    margin-left: 0;
+    padding: 1px;
+  }
+  .container .products ul{
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "img" !important;
+    }
+    .container .products li img{
+      width: 99Vw !important;
+      height: 270px;
+    }
+}
+/* 436 view */
+@media only screen and (max-width: 436px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: header;
+    grid-template-rows: 1fr;
+    grid-template-areas: "i"
+  }
+  header .Menu ul li{
+    margin-left: 10% !important;
+  }
+  .container .products{
+    margin-top: 114px;
+    margin-left: 0;
+    padding: 1px;
+  }
+  .container .products ul{
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "img" !important;
+    }
+    .container .products li img{
+      width: 99Vw !important;
+      height: 270px;
+  }
+}

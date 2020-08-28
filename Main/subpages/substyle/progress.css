@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+/* image position */
+body{
+  background: #000000;
+  cursor: pointer;
+  font-family: Helvetica, Helvetica;
+  font-weight: lighter;
+}
+/* page  upper-header */
+.nav_header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: fixed;
+  background: #FF3920;
+  width: 100%;
+  top: 0;
+  color: #000000;
+  z-index: 1;
+}
+.nav_header .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid;
+}
+.nav_header .logo input[type="search"]{
+	border-width: thin;
+	border-bottom: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+	color: #FFB302;
+  height: 25px;
+  width: 90%;
+  background: #FF3920;
+}
+/*search button */
+.nav_header .logo .search_btn{
+  border-width: thin;
+	border-style: solid;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  border-radius: 100%;
+}
+/*search button and icons */
+.nav_header .logo .search_btn .fa{
+  color: #FFB302;
+  padding: 1%;
+}
+/* subTittle on Header */
+.nav_header .Menu .nav_icons{
+  height: 100%;
+  list-style: none;
+  padding: 17px;
+  margin-left: -13.2%;
+}
+.nav_header .Menu .nav_icons .sym_icons{
+  float: left;
+  padding-left: 12.5%;
+}
+.nav_header .Menu .nav_icons .sym_icons .fa{
+  color: #FFB302;
+  font-size: 1.4em;
+}
+.nav_header .Menu .nav_icons .sym_icons .link_icon{
+  text-decoration: none;
+  color: #FFB302;
+  font-family: monospace, Courier;
+  font-weight: lighter;
+  font-size: 1em;
+}
+/* Menu */
+.control_pannel{
+  position: absolute;
+  margin-left: -33.7%;
+  background: #FFB302;;
+  width: 30%;
+  height: auto;
+  margin-top: 60px;
+  color: #000000;
+  border-radius: 8px;
+}
+.control_pannel .pannel_Menu{
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.pannel_Menu .Time_row{
+  border-bottom: 2px solid #000000;
+  padding-top: 40px;
+}
+.Time_row .Days_num{
+  margin-top: 10%;
+  font-size: 1.3rem;
+  margin-left: 10%;  
+  list-style: none;
+}
+.Days_num li{
+  border-bottom: 2px solid #000;
+}
+.pannel_Menu .Time{
+  position: absolute;
+}
+.Time_row .fa-angle-right{
+  position: absolute;
+  margin-left: 83%;
+  font-size: 1.3rem;
+}
+/* line chart */
+.Container_chart{
+   margin-top: 120px;
+   width: 65%;
+   height: 30%;
+   padding: 3px;
+   margin-left: 34%;
+   opacity: 0.7;
+}
+/* Total_amount */
+.Total_amount{
+  position: relative;
+  background: #ffffff;
+  margin-left: 5%;
+  width: 93%;
+  border-radius: 8px;
+  height: 40%;
+}
+.amount h1{
+  background: rgb(13, 0, 255);
+  font-size: 1.3rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  text-align: center;
+  height: 37px;
+}
+.amount p{
+  font-size: 1.1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  text-align: center;
+  height: 37px;
+}

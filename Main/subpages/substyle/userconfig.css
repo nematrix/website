@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+/* image position */
+body{
+  background: #000000;
+  cursor: pointer;
+  font-family: monospace, Courier;
+  font-weight: lighter;
+}
+/* page  upper-header */
+.nav_header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: fixed;
+  background: #FF3920;
+  width: 100%;
+  top: 0;
+  color: #000000;
+  z-index: 1;
+}
+.nav_header .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid;
+}
+.nav_header .logo input[type="search"]{
+	border-width: thin;
+	border-bottom: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+	color: #FFB302;
+  opacity: 0.9;
+  height: 25px;
+  width: 90%;
+  background: #FF3920;
+}
+/*search button */
+.nav_header .logo .search_btn{
+  border-width: thin;
+	border-style: solid;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  opacity: 0.9;
+  border-radius: 100%;
+}
+/*search button and icons */
+.nav_header .logo .search_btn .fa{
+  color: #FFB302;
+  padding: 1%;
+}
+/* subTittle on Header */
+.nav_header .Menu .nav_icons{
+  height: 100%;
+  list-style: none;
+  padding: 17px;
+  margin-left: -13.2%;
+}
+.nav_header .Menu .nav_icons .sym_icons{
+  float: left;
+  padding-left: 12.5%;
+}
+.nav_header .Menu .nav_icons .sym_icons .fa{
+  color: #FFB302;
+  font-size: 1.4em;
+  opacity: 0.9;
+}
+.nav_header .Menu .nav_icons .sym_icons .link_icon{
+  text-decoration: none;
+  color: #FFB302;
+  font-family: monospace, Courier;
+  font-weight: lighter;
+  font-size: 1em;
+  opacity: 0.9;
+}
+/* userconfig */
+.user_config{
+  margin-top: 130px;
+  color:#FFB302;
+  font-size: 1.27em;
+  opacity: 0.7;
+}
+.user_config ul{
+  list-style: none;
+}
+.user_config li{
+  border-bottom: 2px solid #373B49;
+  padding: 10px;
+  background: #000;
+}
+.user_profile li{
+  background: #B80000;
+  opacity: 0.6;
+}
+.privacy_key li{
+  background: #A60000;
+  opacity: 0.6;
+}
+.Graph_options li{
+  background: #C20200;
+  opacity: 0.6;
+}
+.ads li{
+  background: #AD0000;
+  opacity: 0.6;
+}
+.user_out li{
+  background: darkred;
+  opacity: 0.6;
+}
+span{
+  padding: 10px;
+  font-size: 1.28em;
+  color: #FFB302;
+}
+.user_config .fa{
+  padding: 5px;
+}
+.fa-user-cog{
+  color: #007EFF;
+}
+.fa-user-shield{
+  color: #00E000;
+}
+.fa-chart-line{
+  color: #00FF7E;
+}
+.fa-power-off{
+  color: #610000;
+}
+.fa-ad{
+  color: #006F91;
+}

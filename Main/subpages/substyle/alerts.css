@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+/* image position */
+body{
+  background: dimgrey;
+  cursor: pointer;
+}
+/* page  upper-header */
+header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: fixed;
+  background: #000000;
+  width: 100%;
+  top: 0;
+  color: #000000;
+  z-index: 1;
+}
+header .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid;
+}
+header .logo input{
+	border-width: thin;
+	border-bottom: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+	color: dimgrey;
+  height: 25px;
+  width: 90%;
+  background: #000000;
+}
+header .logo button{
+  border-width: thin;
+	border-style: solid;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+header .logo button i{
+  color: dimgrey;
+  padding: 1%;
+}
+/* subTittle on Header */
+header .Menu ul{
+  height: 100%;
+  list-style: none;
+  padding: 19px;
+}
+header .Menu ul li{
+  float: left;
+  padding-left: 200px;
+}
+header .Menu ul li i{
+  color: dimgrey;
+  font-size: 23px;
+}
+header .Menu ul li a{
+  text-decoration: none;
+  color: dimgrey;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/* mails alerts */
+.alerts_Mails{
+  margin-top: 110px;
+}
+.group_alerts{
+  margin-left: 2px;
+  padding: 14px;
+  list-style-type: none;
+}
+.group_alerts .mail_list{
+  display: block;
+  border-style: solid;
+  border-width: thin;
+  border-color: dimgrey;
+  max-width: 100%;
+  height: 20%;
+  background: black;
+}

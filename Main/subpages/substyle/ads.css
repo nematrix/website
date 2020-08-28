@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+/* image position */
+body{
+  background: dimgrey;
+  cursor: pointer;
+}
+/* page  upper-header */
+header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: fixed;
+  background: #000000;
+  width: 100%;
+  top: 0;
+  color: #000000;
+  z-index: 1;
+}
+header .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid;
+}
+header .logo input{
+	border-width: thin;
+	border-bottom: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+	color: #FFD700;
+  height: 25px;
+  width: 90%;
+  background: #000000;
+}
+header .logo button{
+  border-width: thin;
+	border-style: solid;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+header .logo button i{
+  color: #FFD700;
+  padding: 1%;
+}
+/* subTittle on Header */
+header .Menu ul{
+  height: 100%;
+  list-style: none;
+  padding: 19px;
+}
+header .Menu ul li{
+  float: left;
+  padding-left: 200px;
+}
+header .Menu ul li i{
+  color: #FFD700;
+  font-size: 23px;
+}
+header .Menu ul li a{
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/* page container */
+.channels{
+	margin-top: 40px;
+}
+.channels .ads_Title{
+	text-align: center;
+}
+.channels ul{
+	padding: 60px;
+	margin-left: 50px;
+	list-style-type: none;
+	white-space: pre;
+}
+.channels ul li{
+		margin-top: 10px;
+	}
+.channels ul label{
+  margin-left: 5%;
+}
+.channels ul input{
+		background: dimgrey;
+		border-width: thin;
+		border-style: solid;
+		width: 60%;
+		height: 5%;
+		color: #000000;
+	}
+.channels ul input[type="file"]{
+		/* still researching */
+	}
+/* media accesibility */
+input[type="file"] + .upload{
+	cursor: pointer;
+}
+.channels ul .text_area{
+		height: 30%;
+		text-align: center;
+	}
+.ads_details .ads_preview{
+	position: absolute;
+	overflow: none;
+	background: #000000;
+	top: 209px;
+	border-style: solid;
+	right: 0;
+	margin: 40px;
+	width: 30%;
+	height: 58%;
+	color: gold;
+}
+.fa-cog{
+	margin-left: 90%;
+	font-size: 20px;
+	padding: 11px;
+}
+.button_upload{
+	width: 87%;
+	margin-top: -17%;
+	margin-left: 160px;
+	background: #000000;
+	border-style: solid;
+	border-width: thin;
+	height: 5%;
+	color: gold;
+}
+.fa-plus-circle{
+	font-size: 24px;
+}
+/* ads settings close */
+.ads_settings{
+	display: none;
+	position: absolute;
+	overflow: none;
+	background: #000000;
+	top: 209px;
+	border-style: solid;
+	right: 0;
+	margin: 40px;
+	width: 30%;
+	height: 58%;
+	color: gold;
+}
+.ads_settings .ads_set{
+	list-style: none;
+	font-size: 15px;
+	border-bottom: solid;
+	border-width: thin;
+}
+.ads_set  .font_size, .font_color, .ads_frame{
+	border-bottom: solid;
+	border-width: thin;
+	height: 20%;
+	padding: 50px;
+}
+.ads_set_close{
+	position: absolute;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 27px;
+	color: red;
+	right: 0;
+	transform: rotate(45deg);
+}

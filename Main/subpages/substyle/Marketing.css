@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+body{
+  background: #000000;
+  cursor: pointer;
+  font-family: monospace, Courier;
+  font-weight: lighter;
+}
+/* Marketing_search */
+.search_marketing_bar{
+  height: 100%;
+  margin-top: 130px;
+}
+.search_marketing_bar .Tools_seach{
+  position: relative;
+  margin-left: 7%;
+  padding: 4px;
+  min-height: 100%;
+  margin-top: 25%;
+}
+.Tools_seach input[type='search']{
+  width: 90%;
+  height: 6Vh;
+  color: #FFB302;
+  font-size: 1rem;
+  background: #000000;
+  border: 2px solid #FF3920;
+  text-align: center;
+  border-radius: 5px;
+}
+.Tools_seach button{
+  position: absolute;
+  background: #FF3920;
+  margin-left: -8%;
+  margin-top: 3px;
+  height: 5Vh;
+  width: 7.7%;
+  border-top:none;
+  border-top-right-radius:  5px;
+  border-bottom-right-radius: 5px;
+  border-right: none;
+  border-bottom: none;
+  border-left: 2px solid #000;
+}
+.Tools_seach .fa-search{
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #FFB302;
+}
+/* pinned_channels */
+.pinned_channels{
+  padding: 7px;
+  margin-top: 2%;
+  margin-left: -7.9%;
+}
+.pinned_channels .channels{
+  list-style: none;
+}
+.channels .pinn_channel{
+  display: inline-block;
+  border-radius: 100%;
+  margin-left: 23%;
+  background: #FF3920;
+}
+.pinn_channel .fa{
+  color: #FFB302;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+/* search results */
+.search_results{
+  position: absolute;
+  display: none;
+  background: rgb(71, 71, 71);
+  width: 100%;
+  height: auto;
+  top:  0;
+  left: 0;
+  color: #FFB302;
+}
+.search_results .search_header{
+  position: fixed;
+  background: #000000;
+  width: 100%;
+  padding: 15px;
+  z-index: 2;
+}
+.search_results .search_header input[type="search"]{
+  width: 84%;
+  height: 30px;
+  color: #FFB302;
+  font-size: 1rem;
+  background: #000000;
+  border-bottom:  2px solid #FF3920;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.search_header ul{
+  list-style: none;
+  padding: 10px;
+  margin-left: -30%;
+}
+.search_header li{
+  display: inline-block;
+  margin-left: 27%;
+}
+.search_results .fa{
+  font-size: 1.5rem;
+}
+/* results */
+.search_results .list_search{
+  margin-top: 115px;
+}
+.list_search .search_list{
+  list-style-type: none;
+  padding: 3px;
+}
+.search_list .Ads{
+  background: #000000;
+  margin-top: 0.3%;
+  width: 100%;
+  height: 130px;
+  border-radius: 8px;
+}

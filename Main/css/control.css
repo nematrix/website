@@ -1,0 +1,17 @@
+/**********************************************************************************************
+1. Laptops view
+2.  medium viewport
+3.  mobile view
+**********************************************************************************************/
+/* Large view */
+@import url("Responder/large.css");
+/* medium view */
+@import url("Responder/medium.css");
+/* Phone view */
+@import url("Responder/mobile.css")
+
+/*************************************************************************************
+Author WEBSTER MSOMBA the CEO
+BAHFABs Corporations
+This is informatin is Licensed and protected
+************************************************************************************/
